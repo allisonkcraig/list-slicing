@@ -25,7 +25,7 @@ def head(input_list):
     [ A, B, C, D, E, F ] --> A
     """
 
-    return None
+    return input_list[0]
 
 
 def tail(input_list):
