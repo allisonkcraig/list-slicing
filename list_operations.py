@@ -120,7 +120,8 @@ def replace_third_and_last(input_list):
     [ A, B, C, D, E, F ] --> [ A, B, 37, D, E, 37 ]
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def replace_middle(input_list):
@@ -130,7 +131,8 @@ def replace_middle(input_list):
     [ A, B, C, D, E, F, G, H, I ] --> [ A, B, 42, 37, H, I ]
     """
 
-    pass
+    input_list[2:-2:2] = 42
+    input_list[3:-2:2] = 37
 
 
 def delete_third_and_seventh(input_list):
