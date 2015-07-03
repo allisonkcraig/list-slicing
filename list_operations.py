@@ -128,11 +128,11 @@ def replace_middle(input_list):
     """
     Replace all elements of the input list with the the values 42 and 37, in
     that order, except for the first two and last two elements.
-    [ A, B, C, D, E, F, G, H, I ] --> [ A, B, 42, 37, H, I ]
+    [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I' ] --> [ A, B, 42, 37, H, I ]
     """
 
-    input_list[2:-2:2] = 42
-    input_list[3:-2:2] = 37
+    input_list[2:-2] = [42, 37]
+#    input_list[2:-3] = 42
 
 
 def delete_third_and_seventh(input_list):
@@ -141,7 +141,8 @@ def delete_third_and_seventh(input_list):
     [ A, B, C, D, E, F, G, H ] --> [ A, B, D, E, F, H ]
     """
 
-    pass
+    del input_list[2]
+    del input_list[5]
 
 
 def delete_middle(input_list):
@@ -151,7 +152,7 @@ def delete_middle(input_list):
     [ A, B, C, D, E, F, G, H ] --> [ A, B, G, H ]
     """
 
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
