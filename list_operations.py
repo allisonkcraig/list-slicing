@@ -93,7 +93,7 @@ def inner_four(input_list):
     """
 
     return input_list[2:6]
-    
+
 
 def inner_four_end(input_list):
     """
@@ -102,7 +102,7 @@ def inner_four_end(input_list):
     [ A, B, C, D, E, F, G, H, I, J, K, L] --> [ G, H, I, J ]
     """
 
-    # return input_list[6:2:-1]
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -285,3 +285,4 @@ def custom_equality(some_list, another_list):
 # END OF EXTRA CREDIT
 #
 # Please ask for a code review. Also, give your partner a high-five!
+

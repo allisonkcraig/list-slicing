@@ -227,3 +227,4 @@ class TestListOperations(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+print input_list[7:3:-1]
